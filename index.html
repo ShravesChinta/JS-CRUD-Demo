@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 20px;
+      }
+      form {
+        margin-bottom: 20px;
+        display: flex;
+        gap: 10px;
+      }
+      input,
+      button {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      button {
+        cursor: pointer;
+        background-color: #007bff;
+        color: white;
+        border: none;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      li div {
+        display: flex;
+        gap: 10px;
+      }
+      li button {
+        padding: 5px 10px;
+      }
+      .edit-button {
+        background-color: #28a745;
+      }
+      .edit-button:hover {
+        background-color: #218838;
+      }
+      .delete-button {
+        background-color: #dc3545;
+      }
+      .delete-button:hover {
+        background-color: #c82333;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CRUD Application in Vanilla JS</h1>
+    <form id="crudForm">
+      <input type="text" id="name" placeholder="Enter name" required />
+      <input type="text" id="username" placeholder="Enter User Name" required />
+      <input type="email" id="email" placeholder="Enter Email" required />
+      <button type="submit">Add</button>
+    </form>
+    <h2>Displaying Users Info</h2>
+    <ul id="crudList"></ul>
+    <script src="script.js"></script>
+  </body>
+</html>
